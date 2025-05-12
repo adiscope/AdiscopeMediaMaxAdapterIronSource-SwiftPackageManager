@@ -1,0 +1,1 @@
+# AdiscopeMediaMaxAdapterIronSource-SwiftPackageManager
