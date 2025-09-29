@@ -21,13 +21,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterIronSource",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.3.0/AdiscopeMediaMaxAdapterIronSource.zip",
-            checksum: "d2db318d283de9d95978f0fdbe67edeb0b6eefa1b2cd5586061bc27fb058b31b"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/AdiscopeMediaMaxAdapterIronSource.zip",
+            checksum: "196cea714be692f17c232735668413e9210c4620c543d37a494f22e6fe2f38cb"
         ),
         .binaryTarget(
             name: "IronSource",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.3.0/IronSource.xcframework.zip",
-            checksum: "58623ab79861b8d8405ad56cdf60057611131f4d412f3157c32821bf1f0b00e8"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/IronSource.xcframework.zip",
+            checksum: "9120c88836ebc271f208c6a8bea708bbe7efb633e4bb800b741444986dbca0a6"
         ),
     ]
 )
