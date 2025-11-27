@@ -10,24 +10,34 @@ let package = Package(
             name: "AdiscopeMediaMaxAdapterIronSource",
             targets: ["AdiscopeMediaMaxAdapterIronSourceTarget"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.4.0"),
+    ],
     targets: [
         .target(
             name: "AdiscopeMediaMaxAdapterIronSourceTarget",
             dependencies: [
                 .target(name: "AdiscopeMediaMaxAdapterIronSource"),
+                .target(name: "AdiscopeMediaMaxAdapterIronSourceMediationAdapter"),
                 .target(name: "IronSource"),
+                .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
             ],
             path: "Sources"
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterIronSource",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/AdiscopeMediaMaxAdapterIronSource.zip",
-            checksum: "196cea714be692f17c232735668413e9210c4620c543d37a494f22e6fe2f38cb"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeMediaMaxAdapterIronSource.zip",
+            checksum: "1aa18430a1626f4a8c47e48d113126ca6d979855ab0225d9610aaff48839e4ce"
+        ),
+        .binaryTarget(
+            name: "AdiscopeMediaMaxAdapterIronSourceMediationAdapter",
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AppLovinMediationIronSourceAdapter.xcframework.zip",
+            checksum: "e55967e994a2721f8f7a9e381d5076ea10a798d1c08e26dc4f68055f5ea160c8"
         ),
         .binaryTarget(
             name: "IronSource",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/IronSource.xcframework.zip",
-            checksum: "9120c88836ebc271f208c6a8bea708bbe7efb633e4bb800b741444986dbca0a6"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/IronSource.xcframework.zip",
+            checksum: "fe7736b2296460b9f7889e69efdec4e0b5a5ccd5c1eea8b67571db2eda6da8e9"
         ),
     ]
 )
