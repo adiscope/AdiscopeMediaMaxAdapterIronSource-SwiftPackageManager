@@ -11,7 +11,7 @@ let package = Package(
             targets: ["AdiscopeMediaMaxAdapterIronSourceTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.4.0"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
     ],
     targets: [
         .target(
@@ -26,18 +26,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterIronSource",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeMediaMaxAdapterIronSource.zip",
-            checksum: "1aa18430a1626f4a8c47e48d113126ca6d979855ab0225d9610aaff48839e4ce"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AdiscopeMediaMaxAdapterIronSource.zip",
+            checksum: "9dc324246aa2a7b221167a8eaee81c8d72ef678ce2a9bbe514e443b912a2a1b5"
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterIronSourceMediationAdapter",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AppLovinMediationIronSourceAdapter.xcframework.zip",
-            checksum: "e55967e994a2721f8f7a9e381d5076ea10a798d1c08e26dc4f68055f5ea160c8"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AppLovinMediationIronSourceAdapter.xcframework.zip",
+            checksum: "0131fd1de69079552e021339b6ee1fd75d9d0cb355b7ca2931dbaae5a5a55ab4"
         ),
         .binaryTarget(
             name: "IronSource",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/IronSource.xcframework.zip",
-            checksum: "fe7736b2296460b9f7889e69efdec4e0b5a5ccd5c1eea8b67571db2eda6da8e9"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/IronSource.xcframework.zip",
+            checksum: "1040a68bab4fda76f7e345017d9254c9ca2034fc62c2cb352f46a3267f2d532f"
         ),
     ]
 )
